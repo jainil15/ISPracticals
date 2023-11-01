@@ -8,6 +8,6 @@ def sha1_hash(plaintext):
     return hashed
 
 
-plaintext = "Hello, World!"
+plaintext = "Jainil Patel"
 sha1_result = sha1_hash(plaintext)
 print("SHA-1 Hash:", sha1_result)

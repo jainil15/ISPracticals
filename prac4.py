@@ -14,6 +14,7 @@ def vigenere_decryption(ciphertext, key):
 
 pt = "jainilpatel"
 key = "vigenere"
+print("plaintext: ", pt, "Key: ", key)
 ct = vigenere_encryption(pt, key)
-print(ct)
-print(vigenere_decryption(ct, key))
+print("ciphertext: ", ct)
+print("plaintext: ", vigenere_decryption(ct, key))

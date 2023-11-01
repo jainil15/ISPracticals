@@ -26,9 +26,10 @@ def main():
     d = calc_d(e, p, q)
     n = p * q
     plaintext = 88
+    print("plaintext integer: ", plaintext)
     ciphertext = rsa_encryption(plaintext, e=e, n=n)
-    print(ciphertext)
-    print(rsa_decryption(ciphertext, d=d, n=n))
+    print("ciphertext integer: ", ciphertext)
+    print("plaintext integer: ",rsa_decryption(ciphertext, d=d, n=n))
 
 
 if __name__ == "__main__":

@@ -103,7 +103,7 @@ def playfair_decryption(ciphertext, key):
 
 pt = "jainilpatel"
 key = "monarchy"
-print(pt)
+print("plaintext: ", pt)
 ct = playfair_encryption(pt, "monarchy")
-print(ct)
-print(playfair_decryption(ct, key))
+print("ciphertext: ", ct)
+print("plaintext: ", playfair_decryption(ct, key))

@@ -17,6 +17,7 @@ _key = {'a': 'h', 'b': 'm', 'c': 'n', 'd': 't', 'e': 'z', 'f': 'v', 'g': 'b', 'h
         'l': 'g', 'm': 'x', 'n': 'o', 'o': 'y', 'p': 'q', 'q': 'i', 'r': 'k', 's': 'w', 't': 'u', 'u': 'f', 'v': 'e',
         'w': 'r', 'x': 'a', 'y': 'c', 'z': 'l'}
 pt = "jainilpatel"
+print("plaintext: ", pt)
 ct = mono_alphabetic_encryption(pt, _key)
-print(ct)
-print(mono_alphabetic_decryption(ct, _key))
+print("ciphertext: ", ct)
+print("plaintext: ", mono_alphabetic_decryption(ct, _key))

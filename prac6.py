@@ -234,19 +234,18 @@ def convert_hex_to_str(text):
 key = "0f1571c947d9e8590cb7add6af7f6798"
 key_generation(key)
 
-plaintext = "0123456789abcdeffedcba9876543210"
+# plaintext = "0123456789abcdeffedcba9876543210"
 plaintext2 = "jainilpatel11501"
+print("plaintext: ", plaintext2)
 plaintext2 = convert_to_bytes(plaintext2)
-
-ciphertext = aes_encryption(plaintext, KEYS)
-ciphertext_ = convert_to_str(ciphertext)
-print(ciphertext_)
-pt_ = aes_decryption(ciphertext_, KEYS)
-print(convert_to_str(pt_))
-
 ciphertext = aes_encryption(plaintext2, KEYS)
 ciphertext_ = convert_to_str(ciphertext)
-print(ciphertext_)
+print("plaintext in bytes: ", plaintext2)
+print("ciphertext in bytes: ", ciphertext_)
+pt_ = aes_decryption(ciphertext_, KEYS)
+print("plaintext in bytes: ", convert_to_str(pt_))
+ciphertext = aes_encryption(plaintext2, KEYS)
+ciphertext_ = convert_to_str(ciphertext)
 pt_ = aes_decryption(ciphertext_, KEYS)
 pt__ = convert_hex_to_str(convert_to_str(pt_))
-print(pt__)
+print("plaintext: ", pt__)
