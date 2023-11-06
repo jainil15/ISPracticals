@@ -236,6 +236,7 @@ key_generation(key)
 
 # plaintext = "0123456789abcdeffedcba9876543210"
 plaintext2 = "jainilpatel11501"
+print("Key:", key)
 print("plaintext: ", plaintext2)
 plaintext2 = convert_to_bytes(plaintext2)
 ciphertext = aes_encryption(plaintext2, KEYS)

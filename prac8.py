@@ -26,6 +26,8 @@ def main():
     d = calc_d(e, p, q)
     n = p * q
     plaintext = 88
+    print("Private Key: {", d, ",", n, "}")
+    print("Public Key: {", e, ",",  n, "}")
     print("plaintext integer: ", plaintext)
     ciphertext = rsa_encryption(plaintext, e=e, n=n)
     print("ciphertext integer: ", ciphertext)

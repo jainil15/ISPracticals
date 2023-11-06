@@ -73,7 +73,7 @@ def hill_cipher_decryption(ciphertext, key):
 
 pt = "jainilpatel"
 key = "hill"
-print("plaintext: ", pt, "key: ", key)
+print("plaintext: ", pt, "\nkey: ", key)
 ct = hill_cipher_encryption(pt, key)
 print("ciphertext: ", ct)
 print("plaintext: ", hill_cipher_decryption(ct, key))

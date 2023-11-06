@@ -14,6 +14,7 @@ def ceaser_decryption(ciphertext, shift):
 
 
 pt = "Meet me after toga party"
+print("plaintext: ", pt, "\nKey: ", 3)
 ct = ceaser_encryption(pt, 3)
 print(ct)
 print(ceaser_decryption(ct, 3))

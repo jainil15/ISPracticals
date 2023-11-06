@@ -37,7 +37,6 @@ def compute_modulo(a, b):
 def main():
     prime_num = 19
     alpha_ = 10
-    print(alpha_)
     Xa = 16
     Ya = public_key_gen(private_key=Xa, q=prime_num, alpha=alpha_)
 
